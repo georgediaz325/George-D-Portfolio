@@ -655,7 +655,7 @@ function count(start,end) {
 
 count(0,10);
 
-*/
+
 
 //recursive function practice
 
@@ -670,3 +670,9 @@ const countUp = (num) => {
 }
 
 countUp(0);
+*/
+
+// Password example 
+
+
+ 

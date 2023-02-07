@@ -6,3 +6,12 @@
     align-items: center;
     display: flex;
 }
+
+.title{
+    font-size: 32pt;
+    text-align: center;
+}
+
+.notes{
+    padding-left: 30px;
+}

@@ -2,60 +2,70 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Html Notes</title>
 </head>
 <body>
-    <h1>HTML Notes</h1>
+    <div class="title">HTML Notes</div>
+    <div class ="notes">
+        <h3>Building Your First Webpage</h3>
+            <ul>
+                <li>Your homepage file should always be named index.html</li>
+                <li>The HTML file requires a boilerplate, VScode has a shortcut where you can just write ! and it will automatically paste the boilerplate</li>
+                <li>The very first thing at the top of the file is the <!DOCTYPE html>, this tells our browser what version of HTML our page has been coded in </li>
+                <li>Then the html tag that tells the browser we have used HTML to code our page</li>
+                <li>The head tag allows you to add things that won’t go to the main body of our page like the title or specific instructions that you want your browser to apply to the whole page</li>
+                <li>The title is the title of the browser window</li>
+                <li>The body houses all the information that is displayed in the webpage </li>
+            </ul>
 
-    <ul>
-        <li>Your homepage file should always be named index.html</li>
-        <li>You  can put a single exclamation mark at the beginning of the code
-            to automatically import a boilerplate.
-        </li>
-        <li>To open the web page from the terminal navigate to the directory 
-            containing the index.html file and type “open ./ “followed by the file
-             name”</li>
-        <li>h tags are used for headings and they can go all the way down 
-            to h6; 1 being the largest and 6 being the smallest</li>
-        <li>p tags are used for paragraphs and will add breaks between your text</li>
-        <li>strong tags make your text bold, this tag can be used within paragraphs
-             wrapping around words, this tag tells your Webpage that this text is
-              important
-        </li>
-        <li>em tags make text italic, this tag can also be used in paragraphs
-             like the strong tag
-        </li>
-        <li>!- - will allow you to make comments not visible on the website, 
-            make sure to close it with - -> </li>
-        <li>ul makes unordered lists, for each item in the list the item 
-            starts with a li tag</li>
-        <li>olmakes ordered lists, for each item in this lists each item 
-            starts with a li tag as well
-        </li>
-        <li>a tags will add links, the opening tag consists of two parts, 
-            a name, and a value, in the case for links you would add 
-            href after the a tag then followed by the link in quotes, 
-            eg. <a href=“google.com”>click me</a>
-        </li>
-        <li>To make a new page on the same site to be able to use links across,
-             make a new file in the same parent directory , when the files are in 
-             the same directory you can simply put the file name as the href value, 
-             eg. a href=“about.html”
-        </li>
-        <li>Its best practice to give each page its own directory, for example the 
-            about page vs the home page, when linking a page from a different 
-            directory just put the directory name infront of the file with ./ 
-            leading it, eg a href=“./pages/about.html”
-        </li>
-        <li>Using img src=“”> you can add images to your webpage, if its 
-            downloaded on your computer you can make a new directory and link 
-            it. ex. img src=“images/dog.jpg” alt =“An Image of a dog”>; you should 
-            always include an alt tag, it will add a description in the cases where 
-            your image does not load</li>
-        <li>using ../ allows you to use files outside of the directory you 
-            are currently in, for example, you can use ../ to access your images 
-            directory while in your pages directory</li>
-        
+        <h3>Paragraphs and Headings</h3>
+            <ul>
+                <li>The h tags are used for headings and they can go all the way down to h6 1 being the largest and 6 being the smallest</li>
+                <li>The p tags are used for paragraphs and will add breaks between your text</li>
+                <li>The br tag will let you start your text on a new line, without starting a new paragraph</li>
+            </ul>
+            
+        <h3>Bold and Italics</h3>
+            <ul>
+                <li>The strong tag make your text bold, this tag can be used within paragraphs wrapping around words, this tag tells your Webpage that this text is important</li>
+                <li>The em tag make text italic, this tag can also be used in paragraphs like the strong tag</li>
+            </ul>
+
+        <h3>Lists</h3>
+            <ul>
+                <li>The ul tag makes unordered lists, for each item in the list the item starts with a li tag</li>
+                <li>ol makes ordered lists, for each item in this lists each item starts with a li tag as well</li>
+            </ul>
+
+        <h3>Links</h3>
+            <ul>
+                <li>The a tag will add links, the opening tag consists of two parts, a name, and a value, in the case for links you would add href after the a tag then followed by the link in quotes, eg. <a href="https://www.google.com/">Click me</a></li>
+                <li>To make a new page on the same site to be able to use links across, make a new file in the same parent directory , when the files are in the same directory you can simply put the file name as the href value, eg. <a href="css.html">This is a link to my CSS notes</a></li>
+                <li>Its best practice to give each page its own directory, for example the about page vs the home page, when linking a page from a different directory just put the directory name infront of the file with ../ leading it, eg <a href="../index.html">Back to Cover Page</a></li>
+            </ul>
+
+        <h3>Images</h3>
+            <ul>
+                <li>Using img src=“” you can add images to your webpage either by using a file name or a saved image or a URL, if it is a downloaded image on your computer you can link it like so: img src=“images/dog.jpg” alt =“An Image of a dog”(surrounded by opening and closing tags).</li>
+                <li>You should always include an alt tag, it will add a description in the cases where your image does not load</li>
+                <li>Like with links, using ../ allows you to use files outside of the directory you are currently in, for example, you can use ../ to access your images directory while in your pages directory</li>
+            </ul>
+
+        <h3>Input</h3>
+            <ul>
+                <li>There are lots of tags for asking for the users input, but the one you will use the most is the input tag. Its a self closing tag and you include two attributes inside it, the id attribute which gives your input tag a unique name,  and the type attribute which tells the html file what type of input is being asked. for ex: 
+                    <p>Password: input id = “passwordBox” type =“password”</p></li>
+                <li>Another attribute you can add is value, which will allow you to write a message inside of the input box or button</li>
+                <li>The type of input type attributes you can use include but are not limited to:
+                    <ul>
+                        <li>text : Creates a box for entering text</li>
+                        <li>password : creates a box for entering a password (will present the text as black dots to remain secret)</li>
+                        <li>button : creates a clickable button (with JavaScript)</li>
+                        <li>checkbox : creates a box that users can tick or untick</li>
+                    </ul>
+                </li>
+            </ul>
+    </div>
 </body>
 </html>
