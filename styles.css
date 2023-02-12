@@ -1,3 +1,12 @@
+.pageSetup{
+    padding-left: 16px;
+}
+.header{
+    justify-content: flex-end;
+    gap: 10px;
+    display: flex;
+    padding-right: 16px;
+}
 .top-section{
     padding: 16px;
     border: 8px;
@@ -6,7 +15,10 @@
     align-items: center;
     display: flex;
 }
-
+.startPara {
+    padding-left: 16px; 
+    padding-bottom: 16px;
+}
 .title{
     font-size: 32pt;
     text-align: center;
