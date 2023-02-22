@@ -15,66 +15,47 @@
                 <p><a href = "../resume.html">Resume</a></p>
         </div>
     </div>
-    <h1>CSS Notes</h1>
-
-    <h3>CSS</h3>
-    <ul>
-        <li>A type selector like div will select all elements of the given element type</li> 
-        <li>A class selector will select all elements with the given class, you use them like this, div class=“alert-text”>BOOM div, then in the css file you would put .alert-text{color:red;}, classes start with a period in the css file, this will result in the text selected by the class selector to turn the text red.</li>
-        <li>id selectors are similar to class selectors, the major difference is that an element can only have one id and an id cannot be repeated on a single page, and they start with a # in the css file, you shouldn’t use ids very often</li>
-        <li>when two different selectors have similar declarations you can group them together with a comma separating them like so :</li>
-        <li>Another thing you can do with the class attribute is to add multiple classes to a single element as a space-separated list, such as class="alert-text severe-alert"</li>
-        <li>you can also chain two classes together for example ; <div class="subsection header">Latest Posts</div> can be linked together in the css file like so .subsection.header{color: red;} what this will do is it will select any element that has both the subsection and header classes notice there isn’t any space between the class selectors in the css file; note you can only chain selectors of the same type</li>
-        <li>color: will obviously change the color of your element</li>
-        <li>background-color: will change the background color of your element</li>
-        <li>background-image: url(); can be used to make an image the background. to go back a directory in css you type ../ before declaring the image; ex url(../img/hamster.jpg)</li>
-        <li>font-family: will choose the font type for your text, each font will fall into one of two categories, font family name and generic family name. If a browser cannot find or doesn’t support the first font it will use the next possible font, so it is best practice to use both in cases where the first one is not supported; eg. font-family: “Times New Roman”, sans-serif;</li>
-        <li>font-size: will change the font size and should contain no spaces </li>
-        <li>font-weight: will change the boldness of the text, this can be a keyword, e.g. font-weight: bold, or a number between 1 and 1000 e.g. font-weight: 700 which is the equivalent of “bold”</li>
-        <li>text-align: will align text horizontally, you can use it as follows, e.g. text-align: center</li>
-        <li>by default an images size will be the actual size of the images files height and width, if you would like to change the size go the photo without distorting the proportions you can set the height to auto and adjust the width value, e.g. img{height:auto;
-            width: 500px;
-            }
-            even if you don’t plan on changing the size of the image you should always create a designated img element, because if you don’t and the image doesn’t load right away it will take up very little space then shift all other text as soon as it loads, having a designated height and width will allow the space to already be taken up, even when the image hasn’t loaded yet</li>
-        <li>Finally to link the css and html files together you put <link rel="stylesheet" href="styles.css"> in the head tag on the html file, this is assuming the css file is in the same directory as the html files</li>
-        <li>Everything on your webpage is surrounded by an invisible box, aka the box model, to manipulate the size of the boxes and the space between them you use padding margin and borders</li>
-        <li>padding increases the space between the edge of a box and the content inside of it</li>
-        <li>margin increases the space between a box and any others that sit next to it </li>
-        <li>border adds space between the margin and the padding</li>
-        <li>div is a block element, meaning using it as a selector will result in a separation, by default it will be stacked one on top of another
-            21. span is an inline element which appears inline, similar to an <a> tag</li>
-        <li>to make comments in css you write /* as a opening and */ for closing </li>
-        <li>Flexbox is a way to arrange items into rows or columns</li>
-        <li>The job of a flex container is to group a bunch of flex items together and define how they’re positioned.</li>
-        <li>The first thing you need to do in flex box to make a flex box container is write display: flex; this will tell your code that this is a container, without the display:flex; it will ignore all the flex properties you add to it.</li>
-        <li>justify-content: will define horizontal alignment of the items in the container</li>
-        <li>align-items:will vertically align items</li>
-        <li>Values for justify-content are shown below:
-            * center(will center your items to the page)
-            * flex-start(will push items to the far left hand side of the page)
-            * flex-end(will push items to the far right hand side of the page)
-            * space-around(will put space to all sides of the items)
-            * space-between(will put space in between each item)</li>
-        <li>To group items you simply have to give these items their own div</li>
-        <li>when  flex containers have an assigned height, items can be positioned vertically inside of it.</li>
-        <li>he available options for align-items is similar to justify-content:
-            * center
-            * flex-start   (top)
-            * flex-end      (bottom)
-            * stretch
-            * baseline</li>
-        <li>flex-wrap: wrap;, forces items thatdont fit on one line to be kicked down to a lower row, allowing for all items to be seen no matter the horizontal size of the page. If you don’t want it to wrap you put no-wrap instead of wrap.</li>
-        <li>adding flex-direction: allows for your items to be organized in rows or columns, you would use those terms exactly; flex-direction: row; (would leave it as the default side by side); flex-direction: column; will make it a vertical container</li>
-        <li>to individually manipulate the order of your flex items you use the order tag followed by a number, Its default value is 0, and increasing or decreasing it from there moves the item to the right or left, respectively. ex. order: 1;</li>
-        <li>to vertical manipulate the alignment you use align-self: in the flex item</li>
-        <li>The flex property defines the width of individual items in a flex container, that tells the flex container how to distribute extra space to each item. </li>
-        <li>flex: is a short hand for flex-grow, flex-shrink, and flex-basis so flex:1; actually defaults flex: 1 1 0;</li>
-        <li>An item with a flex-grow: value of 2 will grow twice as fast as items with the default value of 1.</li>
-        <li>flex-shrink is similar to flex-grow as it manipulates the size of the css. flex-shrink: 1; will have all the items shrink evenly, but for example a flex-shrink: 0; will make it so the item never becomes smaller even if the browser becomes smaller</li>
-        <li>gap: will add a specified space between flex items</li>
-        <li>adding html, body{ margin:0; padding: 0; will make it so your whole web page gets affected by your css and no white borders show</li>
-        <li>align-content determines the spacing between lines, while align-items determines how the items as a whole are aligned within the container</li>
-
+    
+    <div class="title">CSS Notes</div>
+    <div class ="notes">
+        <h3>Intro To Css</h3>
+        <ul>
+            <li>To link the css and html files together you put link rel="stylesheet" href="styles.css" 
+                (all in opening and closing brackets) in the head tag on the html file</li>
+            <li>To make comments in css you write /* as a opening and */ for closing</li>
         </ul>
+        <h3>Divs and Spans</h3>
+        <ul>
+            <li>A type selector like div will select all elements of the given element type, div is a 
+                block element, meaning using it as a selector will result in a separation, by default it will be stacked one on top of another</li>
+            <li>A Span is an inline element which appears inline, similar to an a tag</li>
+        </ul>
+        <h3>Classes and IDs</h3>
+        <ul>
+            <li>A class elector will select all elements with the given class, you use them like this 
+                div class=“alert-text”>BOOM /div, then in the css file you would put .alert-text{color:red;}, 
+                classes start with a period in the css file, this will result in the text selected by the class 
+                selector to turn the text red.
+            </li>
+            <li>You can select certain tags inside a div by adding the tag after the class or id, like so:
+                 .body-text p {} This will select all the p tags inside the body-text div
+            </li>
+            <li>ID selectors are similar to class selectors, the major difference is that an element can only 
+                have one id and an id cannot be repeated on a single page, and they start with a # in the css file
+            </li>
+            <li>When two different selectors have similar declarations you can group them together with a comma separating them</li>
+            <li>Another thing you can do with the class attribute is to add multiple classes to a single element as a space-separated list, 
+                such as class="alert-text severe-alert"
+            </li>
+            <li>You can also chain two classes together for example ; div class="subsection header">Latest Posts/div can be linked together 
+                in the css file like so .subsection.header{color: red;} what this will do is it will select any element that has both the subsection 
+                and header classes notice there isn’t any space between the class selectors in the css file; note you can only chain selectors of the 
+                same type
+            </li>
+            <li>color: will obviously change the color of your element
+            </li>
+            <li>background-color: will change the background color of your element</li>
+        </ul>
+    </div>
 </body>
 </html>
