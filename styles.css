@@ -1,7 +1,86 @@
 body{
+    position:relative;
     margin: 0;
+}
+
+
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color:white;
 
 }
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+@media(max-width:1280px) {
+    .container{
+        width:100%;
+    }
+}
+.pageSetup{
+    width:95%;
+    min-height: 50px;
+    margin: auto;
+    padding-left:30px;
+    padding-right: 30px;
+    font-size: large;
+    color:black;
+    display: flex;
+}
+
+.sign{
+    flex:1;
+    justify-content: flex-start;
+
+}
+
+.header{
+    justify-content:flex-end;
+    gap: 10px;
+    display: flex;
+
+}
+
+.top-section{
+    margin-top:50px;
+    padding: 16px;
+    padding-left:16px;
+    padding-right: 16px;
+    border: 8px;
+    gap: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+.current, .project, .date{
+    text-align: center;
+}
+.intro {
+    padding-left:16px;
+    padding-right: 16px;
+}
+.startPara {
+    text-align: center;
+    padding-left:16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+.title{
+    margin-top:75px;
+    font-size: 32pt;
+    text-align: center;
+}
+
+.notes{
+    margin-top:75px;
+    padding-left: 30px;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -13,54 +92,4 @@ a:hover {
 a:visited{
     text-decoration: none;
 
-}
-.pageSetup{
-    padding-left:30px;
-    padding-right: 30px;
-    font-size: large;
-    color:black;
-    display:flex;
-}
-
-.sign{
-    flex:1;
-    justify-content: flex-start;
-
-}
-
-.header{
-    justify-content: flex-end;
-    gap: 10px;
-    display: flex;
-
-}
-
-.top-section{
-    padding: 16px;
-    padding-left:16px;
-    padding-right: 16px;
-    border: 8px;
-    gap: 8px;
-    justify-content: space-evenly;
-    align-items: center;
-    display: flex;
-}
-
-.intro {
-    padding-left:16px;
-    padding-right: 16px;  
-}
-.startPara {
-    text-align: center;
-    padding-left:16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-}
-.title{
-    font-size: 32pt;
-    text-align: center;
-}
-
-.notes{
-    padding-left: 30px;
 }

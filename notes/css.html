@@ -6,50 +6,54 @@
     <title>CSS Notes</title>
 </head>
 <body>
-    <div class = "pageSetup">
-        <div class = "sign"><h3>George Pedroso-Diaz</h3></div>
-        <div class = "header">
-                <p><a href = "../index.html">Home</a></p>
-                <p><a href = "../projects.html">Projects</a></p>
-                <p><a href=  "../contact.html">Contact</a></p>
-                <p><a href = "../resume.html">Resume</a></p>
+    <header>
+        <div class="container">
+            <div class = "pageSetup">
+                <div class = "sign"><h3>George Pedroso-Diaz</h3></div>
+                <div class = "header">
+                        <p><a href = "../index.html">Home</a></p>
+                        <p><a href = "../projects.html">Projects</a></p>
+                        <p><a href=  "../contact.html">Contact</a></p>
+                        <p><a href = "../resume.html">Resume</a></p>
+                </div>
+            </div>
         </div>
-    </div>
-    
+    </header>
+
     <div class="title">CSS Notes</div>
     <div class ="notes">
         <h3>Intro To Css</h3>
         <ul>
-            <li>To link the css and html files together you put link rel="stylesheet" href="styles.css" 
+            <li>To link the css and html files together you put link rel="stylesheet" href="styles.css"
                 (all in opening and closing brackets) in the head tag on the html file</li>
             <li>To make comments in css you write /* as a opening and */ for closing</li>
         </ul>
         <h3>Divs and Spans</h3>
         <ul>
-            <li>A type selector like div will select all elements of the given element type, div is a 
+            <li>A type selector like div will select all elements of the given element type, div is a
                 block element, meaning using it as a selector will result in a separation, by default it will be stacked one on top of another</li>
             <li>A Span is an inline element which appears inline, similar to an a tag</li>
         </ul>
         <h3>Classes and IDs</h3>
         <ul>
-            <li>A class elector will select all elements with the given class, you use them like this 
-                div class=“alert-text”>BOOM /div, then in the css file you would put .alert-text{color:red;}, 
-                classes start with a period in the css file, this will result in the text selected by the class 
+            <li>A class elector will select all elements with the given class, you use them like this
+                div class=“alert-text”>BOOM /div, then in the css file you would put .alert-text{color:red;},
+                classes start with a period in the css file, this will result in the text selected by the class
                 selector to turn the text red.
             </li>
             <li>You can select certain tags inside a div by adding the tag after the class or id, like so:
                  .body-text p {} This will select all the p tags inside the body-text div
             </li>
-            <li>ID selectors are similar to class selectors, the major difference is that an element can only 
+            <li>ID selectors are similar to class selectors, the major difference is that an element can only
                 have one id and an id cannot be repeated on a single page, and they start with a # in the css file
             </li>
             <li>When two different selectors have similar declarations you can group them together with a comma separating them</li>
-            <li>Another thing you can do with the class attribute is to add multiple classes to a single element as a space-separated list, 
+            <li>Another thing you can do with the class attribute is to add multiple classes to a single element as a space-separated list,
                 such as class="alert-text severe-alert"
             </li>
-            <li>You can also chain two classes together for example ; div class="subsection header">Latest Posts/div can be linked together 
-                in the css file like so .subsection.header{color: red;} what this will do is it will select any element that has both the subsection 
-                and header classes notice there isn’t any space between the class selectors in the css file; note you can only chain selectors of the 
+            <li>You can also chain two classes together for example ; div class="subsection header">Latest Posts/div can be linked together
+                in the css file like so .subsection.header{color: red;} what this will do is it will select any element that has both the subsection
+                and header classes notice there isn’t any space between the class selectors in the css file; note you can only chain selectors of the
                 same type
             </li>
             <li>color: will obviously change the color of your element
